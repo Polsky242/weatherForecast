@@ -1,0 +1,71 @@
+.navbar-toggler {
+    position: absolute;
+    right: 5%;
+}
+
+:root {
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+
+.gradientBackground {
+    background: #7ff2ff;
+    background: url("../images/backgoundStars.svg"), -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url("../images/backgoundStars.svg"), -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+    background: url("../images/backgoundStars.svg"), linear-gradient(to right, var(--color1) 0%, var(--color2)100%);
+    filter: url("../images/backgoundStars.svg"), progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+}
+
+.backgroundImgClouds {
+    background-color: #7acdff;
+}
+
+.section-item {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    margin-left: 27%;
+}
+
+.section-item:hover {
+    transform: translateX(0px);
+}
+
+.section-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footerExtension {
+    margin-bottom: 30px;
+}
+
+.shiftRight {
+    margin-left: 90%;
+}
+.text-white{
+    color: white;
+}
+.aboutText {
+    margin-bottom: 20px;
+    font-size: larger;
+    margin-left: 5%;
+}
+.options {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.options li {
+    background: white;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    margin: 0;
+    padding: 18px;
+    text-transform: capitalize;
+}
+

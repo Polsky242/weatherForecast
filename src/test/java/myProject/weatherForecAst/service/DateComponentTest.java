@@ -1,5 +1,6 @@
 package myProject.weatherForecAst.service;
 
+import myProject.weatherForecAst.models.DateComponent;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

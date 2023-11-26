@@ -1,7 +1,7 @@
 package myProject.weatherForecAst.controllers;
 
 import myProject.weatherForecAst.service.ClientDateService;
-import myProject.weatherForecAst.service.DateComponent;
+import myProject.weatherForecAst.models.DateComponent;
 import myProject.weatherForecAst.service.ApiDataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -35,12 +35,5 @@ public class SiteController {
     @RequestMapping("/about")
     public String getAbout() {
         return "pages/About";
-    }
-
-    @RequestMapping("/testApi")
-    public String getJson(Model model) {
-        model.addAttribute("days", dateModel.getDays());
-        model.addAttribute("numOfDayOfTheWeek1", clientDate.clientDate("Moscow"));
-        return "pages/api";
     }
 }

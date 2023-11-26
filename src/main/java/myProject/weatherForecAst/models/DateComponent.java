@@ -1,4 +1,4 @@
-package myProject.weatherForecAst.service;
+package myProject.weatherForecAst.models;
 
 import org.springframework.stereotype.Component;
 

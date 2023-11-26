@@ -5,14 +5,15 @@ function getOptions(word, citiesArr) {
     });
 }
 
-const api = '../js/cities.json';
+const api = "http://localhost:8080/API/cities";
 const cities = [];
 
 fetch(api)
     .then(res => res.json())
     .then(data => {
-        cities.push(...data.cities.map(city => city.name));
-
+        data.forEach(line => {
+            cities.push(line.name);
+        })
         const searchInput = document.querySelector('.search');
         const searchOptions = document.querySelector('.options');
 
@@ -40,9 +41,3 @@ fetch(api)
         searchInput.addEventListener('input', displayOptions);
         searchInput.addEventListener('keyup', displayOptions);
     });
-
-
-
-
-
-

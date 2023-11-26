@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix = "app")
-public class AppProperties {
+public class RestWeatherProp {
     private String apiURL;
 
     public String getApiURL() {

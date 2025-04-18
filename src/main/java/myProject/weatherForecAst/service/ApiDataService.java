@@ -16,7 +16,6 @@ public class ApiDataService {
     private final RestTemplate restTemplate;
     private final RestWeatherProp restWeatherProp;
 
-
     public ApiDataService(RestTemplate restTemplate, RestWeatherProp restWeatherProp) {
         this.restTemplate = restTemplate;
         this.restWeatherProp = restWeatherProp;
@@ -33,7 +32,7 @@ public class ApiDataService {
                 for (int i = 0; i < 5; i++) {
                     assert root != null;
                     double temp = Double.parseDouble(root.path("list").path(i * 8).path("main").path("temp").asText());
-                    weatherTemp.add((int) Math.ceil(temp) + "");//0+16
+                    weatherTemp.add((int) Math.ceil(temp) + "");
                     weatherDescript.add(root.path("list").path(i * 8 + 1).path("weather").get(0).path("description").asText());
                 }
                 weatherTemp.add("no data");

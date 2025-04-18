@@ -1,0 +1,4 @@
+env: prod
+replicaCount: 3
+image:
+  tag: prod

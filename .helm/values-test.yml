@@ -1,0 +1,4 @@
+env: test
+replicaCount: 2
+image:
+  tag: test

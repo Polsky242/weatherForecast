@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: weather-forecast
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/weather-forecast
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
+    hikari:
+      schema: weather_app_schema
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        envers:
+          store_data_at_delete: true
+          revision_on_collection_change: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+secret:
+  weather-key: 29712bf4ce4a2450270d00be2ad1bf55
+app:
+  api-url: https://api.openweathermap.org/data/2.5/forecast?q=YOUR_DEFAULT_CITY&lang=ru&units=metric&appid=${secret.weather-key}
+

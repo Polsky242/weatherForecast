@@ -44,7 +44,7 @@ public class CityJsonService {
                 new CityModel(33L, "Rio de Janeiro", "America/Sao_Paulo")
         );
         try {
-            ObjectMapper mapper = new ObjectMapper();
+            ObjectMapper mapper = new ObjectMapper();//TODO remove
             return mapper.writeValueAsString(cities);
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,0 +1,20 @@
+replicaCount: 2
+
+env: dev
+
+image:
+  repository: polsky984/weatherForecast
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8080
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi

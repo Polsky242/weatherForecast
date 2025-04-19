@@ -2,11 +2,14 @@ package myProject.weatherForecAst.controllers;
 
 
 import lombok.RequiredArgsConstructor;
-import myProject.weatherForecAst.service.CityJsonService;
+import myProject.weatherForecAst.models.City;
+import myProject.weatherForecAst.service.CityService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 
 @RestController
@@ -14,13 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class RestCities {
 
-    private final CityJsonService cityJsonService;
+    private final CityService cityService;
 
     @GetMapping("/cities")
-    @ResponseBody
-    public String getCitiesApi() {
-
-        return cityJsonService.citiesJson();
+    public ResponseEntity<List<City>> getCitiesApi() {
+        return ResponseEntity.ok(cityService.getCities());
     }
-
 }

@@ -1,6 +1,6 @@
 services:
   database:
-    container_name: pg-database
+    container_name: weather-forecast
     image: postgres:16.2
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}

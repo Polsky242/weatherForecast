@@ -1,14 +1,22 @@
-package myProject.weatherForecAst.service;
+package myProject.weatherForecAst.service.impl;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
+import myProject.weatherForecAst.models.City;
 import myProject.weatherForecAst.models.CityModel;
+import myProject.weatherForecAst.repository.CityRepository;
+import myProject.weatherForecAst.service.CityService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class CityJsonService {
+@RequiredArgsConstructor
+public class CityServiceImpl implements CityService {
+
+    private final CityRepository cityRepository;
+
     public String citiesJson() {
         List<CityModel> cities = List.of(
                 new CityModel(1L, "Moscow", "Europe/Moscow"),
@@ -50,5 +58,10 @@ public class CityJsonService {
             e.printStackTrace();
             return "Error occurred while processing the request.";
         }
+    }
+
+    @Override
+    public List<City> getCities(){
+        return cityRepository.findAll();
     }
 }

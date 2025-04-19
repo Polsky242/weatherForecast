@@ -1,4 +1,4 @@
-package myProject.weatherForecAst.service;
+package myProject.weatherForecAst.service.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class ClientDateService {
                         if (node.has("name") &&
                                 node.get("name").asText().equals(city)) {
 
-                            String date = node.path("region").asText();
+                            String date = node.path("timezone").asText();
                             ZoneId zoneId = ZoneId.of(date);
                             return ZonedDateTime.now(zoneId).getDayOfWeek().getValue();
                         }

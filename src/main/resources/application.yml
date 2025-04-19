@@ -19,6 +19,13 @@ spring:
       ddl-auto: none
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/changelog-master.xml
+    contexts: dev
+    liquibase-schema: public
+    default-schema: weather_app_schema
+    drop-first: false
 secret:
   weather-key: 29712bf4ce4a2450270d00be2ad1bf55
 app:

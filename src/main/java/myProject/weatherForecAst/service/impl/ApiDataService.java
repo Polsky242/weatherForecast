@@ -1,4 +1,4 @@
-package myProject.weatherForecAst.service;
+package myProject.weatherForecAst.service.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import myProject.weatherForecAst.models.WeatherModel;

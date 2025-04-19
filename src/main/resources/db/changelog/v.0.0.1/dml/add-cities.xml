@@ -4,128 +4,128 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
-    <changeSet id="WF-100-insert-cities" author="yourname">
-        <insert tableName="city">
+    <changeSet id="WF-100-insert-cities" author="gleb polskiy">
+        <insert tableName="cities">
             <column name="name" value="Moscow"/>
             <column name="timezone" value="Europe/Moscow"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Saint Petersburg"/>
             <column name="timezone" value="Europe/Samara"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Novosibirsk"/>
             <column name="timezone" value="Asia/Novosibirsk"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Yekaterinburg"/>
             <column name="timezone" value="Asia/Yekaterinburg"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Nizhny Novgorod"/>
             <column name="timezone" value="Europe/Moscow"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Paris"/>
             <column name="timezone" value="Europe/Paris"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Berlin"/>
             <column name="timezone" value="Europe/Berlin"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Istanbul"/>
             <column name="timezone" value="Europe/Istanbul"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Shanghai"/>
             <column name="timezone" value="Asia/Shanghai"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Tokyo"/>
             <column name="timezone" value="Asia/Tokyo"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Beijing"/>
             <column name="timezone" value="Asia/Shanghai"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Seoul"/>
             <column name="timezone" value="Asia/Seoul"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Paris"/>
             <column name="timezone" value="Europe/Paris"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="New York City"/>
             <column name="timezone" value="America/New_York"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Tokyo"/>
             <column name="timezone" value="Asia/Tokyo"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="London"/>
             <column name="timezone" value="Europe/London"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Dubai"/>
             <column name="timezone" value="Asia/Dubai"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Singapore"/>
             <column name="timezone" value=""/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Bangkok"/>
             <column name="timezone" value="Asia/Bangkok"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Rome"/>
             <column name="timezone" value="Europe/Rome"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Istanbul"/>
             <column name="timezone" value="Europe/Istanbul"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Prague"/>
             <column name="timezone" value="Europe/Prague"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Amsterdam"/>
             <column name="timezone" value="Europe/Amsterdam"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Barcelona"/>
             <column name="timezone" value="Europe/Madrid"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Seoul"/>
             <column name="timezone" value="Asia/Seoul"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Sydney"/>
             <column name="timezone" value="Australia/Sydney"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Berlin"/>
             <column name="timezone" value="Europe/Berlin"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="San Francisco"/>
             <column name="timezone" value="America/Los_Angeles"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Venice"/>
             <column name="timezone" value="Europe/Rome"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Kyoto"/>
             <column name="timezone" value="Asia/Tokyo"/>
         </insert>
-        <insert tableName="city">
+        <insert tableName="cities">
             <column name="name" value="Rio de Janeiro"/>
             <column name="timezone" value="America/Sao_Paulo"/>
         </insert>

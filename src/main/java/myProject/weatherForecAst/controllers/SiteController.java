@@ -1,9 +1,9 @@
 package myProject.weatherForecAst.controllers;
 
 import lombok.RequiredArgsConstructor;
-import myProject.weatherForecAst.service.ClientDateService;
+import myProject.weatherForecAst.service.impl.ClientDateService;
 import myProject.weatherForecAst.models.DateComponent;
-import myProject.weatherForecAst.service.ApiDataService;
+import myProject.weatherForecAst.service.impl.ApiDataService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

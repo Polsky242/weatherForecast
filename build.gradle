@@ -33,22 +33,22 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 }
 
-jib {
-    from {
-        image = 'eclipse-temurin:17.0.4.1_1-jre'
-    }
-    to {
-        image = "registry.hub.docker.com/polsky984/${project.name}"
-        auth {
-            username = System.getenv("DOCKER_USERNAME")
-            password = System.getenv("DOCKER_PASSWORD")
-        }
-    }
-    container {
-        ports = ['8080']
-        mainClass = 'myProject.weatherForecAst.WeatherForecastApplication'
-    }
-}
+//jib {
+//    from {
+//        image = 'eclipse-temurin:17.0.4.1_1-jre'
+//    }
+//    to {
+//        image = "registry.hub.docker.com/polsky984/${project.name}"
+//        auth {
+//            username = System.getenv("DOCKER_USERNAME")
+//            password = System.getenv("DOCKER_PASSWORD")
+//        }
+//    }
+//    container {
+//        ports = ['8080']
+//        mainClass = 'myProject.weatherForecAst.WeatherForecastApplication'
+//    }
+//}
 tasks.named('bootBuildImage') {
     builder = 'paketobuildpacks/builder-jammy-base:latest'
 }

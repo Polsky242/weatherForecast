@@ -3,6 +3,7 @@ package myProject.weatherForecAst.service.impl;
 import com.fasterxml.jackson.databind.JsonNode;
 import myProject.weatherForecAst.models.WeatherModel;
 import myProject.weatherForecAst.properties.RestWeatherProp;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
